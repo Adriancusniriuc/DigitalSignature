@@ -1,3 +1,5 @@
+
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +8,6 @@
   <title>Skabelon</title>
   <link href="main.css" rel="stylesheet" type="text/css">
   <script src="app.js"></script>
-  <!-- <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <style>
@@ -38,12 +38,8 @@
       justify-content: space-between;
       align-items: center;
       width: 40%;
-      /* overflow: hidden; */
       }
 
-    /* .logo{
-      marg
-    } */
 
     .icons{
       display: flex;
@@ -115,144 +111,19 @@
       overflow: hidden;
     }
 
-    .left-banner{
-      background-size: cover;
-      background-repeat: no-repeat;
-      display: flex;
-      height: 54px;
-      width: 15%;
-      position: absolute; 
-    }
-
-    .left-banner1{
-      background-size: contain;
-      width: 145px;
-      height: 53px;
-      z-index: 2;
-    }
-
-  
-
-    .banner-logo{
-      width: 50%;
-      height: 50%;
+    iframe{
       position: absolute;
-      align-items: center;
-      justify-content: center;
-      z-index: 4;
-      display: flex;
-     margin-top: 6%;
-      margin-left: 10%;
+      transform: scale(0.5);
+      width: 105%;
+      margin-left: -26%;
+      margin-top: -5%;
+      /* overflow: hidden; */
     }
-
-  .banner-logo {
-    width:90px;
-    overflow:hidden;
-  }
-  .banner-logo  {
-      animation: slide-right 5s infinite;
-      margin-top:7%;
-    }
-
-    @keyframes slide-right {
-      from {
-        margin-left: -50%;
-      }
-      to {
-        margin-left: 10%;
-      }
-    }
-
-    
-    .slider{
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: 80%;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      white-space: wrap;
-      height: 100%;
-      margin-left: 26%;
-    }
-  
-    .parallax-div{
-      height: 300px;
-      width: 400px;
-  
-    }
-    .parallax{
-      height: 100%;
-      width: 100%;
-      animation: slide-down 7s infinite
-    }
-
-    @keyframes slide-down {
-      from {
-        margin-top: 30%;
-      }
-      to {
-        margin-top: -10%;
-      }
-    }
-    
-    .banner-text{
-      font-size: 10px;
-      font-weight: 500;
-      color: white;
-      margin: 5%;
-      white-space: nowrap;
-      overflow: hidden;    
-      font-family: 'Source Code Pro', monospace;
-      height: 40%;  
-      /* position: sticky; */
-      /* z-index: 8;
-      position: relative; */
-      /* animation: animated-text 5s steps(78) 1s 1 normal both,
-             animated-cursor 500ms steps(78) infinite;
-             ; */
-     animation: 
-      typing 3.5s steps(78, end),
-      blink-caret .75s step-end infinite;
-    }
-
-    .banner-text1{
-      width: 50%;
-      height: 70px;
-      text-align: center;
-       z-index: 8;
-      position: absolute;
-      overflow: hidden;
-    }
-
-    /* Animation */
-  
-
-/* text animation */
-
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
-}
-
-/* cursor animations */
-
-@keyframes animated-cursor{
-  from{border-right-color: rgba(0,255,0,.75);}
-  to{border-right-color: transparent;}
-}
-    
 
     .disclaimer{
       height: 53px;
       width: 80%;
-      margin-top: 3%;
+      margin-top: 8%;
     }
 
     p{
@@ -293,8 +164,8 @@
         <h2> CEO Founder</h2>
         
         <div class="contact">
-        <div> <i class="fas fa-phone"></i> <span class="ml-1"> <span class="area-code">+45</span> 31 85 88 10 </span></div>
-        <div><i class="fas fa-at "></i> <span class="ml-1">liviu@visual-fix.com </span></div>
+        <div> <i class="fas fa-phone"></i> <a href=tel:(+45)31858810><span class="ml-1"> <span class="area-code">+45</span> 31 85 88 10 </span></a></div>
+        <div><i class="fas fa-at "></i><a href=mailto:liviu@visual-fix.com> <span class="ml-1">liviu@visual-fix.com </span></a></div>
         <div ><i class="fas fa-globe-europe"></i> <a href=https://visual-fix.dk> <span class="ml-1">www.visual-fix.com  </span> </a> </div>
         </div>
 
@@ -305,30 +176,9 @@
 
       <div class="bottom">
         <div class="banner">
-       
-          <div class="left-banner">
-     
-            
-            <div class="left-banner-items">
-              <!-- <div class="logo-div"> -->
-              <img src="assets/Logo.png" class="banner-logo" alt="banner">
-             <!-- </div> -->
-              <img src="assets/Logo_BG.png" class="left-banner1" alt="black">
-            </div>
-            
-        
-          </div>
-          
-          <div class="slider">
-            <div class="parallax-div">
-            <img src="assets/BG.jpg" class="parallax" alt="banner">
-          </div>
-              <div class="banner-text1">
-            <p class="banner-text">
-              Skil dig ud fra mængden og opbyg dit brand identitetet med skræddersyet design
-            </p>
-          </div>
-          </div>
+          <iframe 
+              src="https://adriancusniriuc.github.io/bannerAnimated1/">
+          </iframe>     
         </div>
   
         <div class="disclaimer">
@@ -347,27 +197,3 @@
 
 
 
-<!-- <div dir=“auto”>Best regards,<br><br><br><table cellspacing=“0” cellpadding=“0” border=“0” style=“width: 179px;“>
-  <tbody><tr>
-      <td style=“padding-bottom: 20px”><a href=“www.visual-fix.com”><img id=“TemplateLogo” data-class=“external” src=“https://cd60f9d368cbcab0a50f-d3901811920f1cb10df2bd084d916385.ssl.cf1.rackcdn.com/2018/7/13/af2c4d12cedc4591be5a5d9976600dbd.png” alt=“” style=“display: block”></a></td>
-  </tr>
-  <tr>
-      <td style=“color: rgb(51, 51, 51);“>
-          <font style=“color: rgb(51, 51, 51);“>Liviu Berecz</font>
-      </td>
-  </tr>
-  <tr>
-      <td style=“padding-bottom: 20px; color: rgb(51, 51, 51);“>
-          <font style=“color: rgb(51, 51, 51);“>Executive | Graphic Designer</font>
-      </td>
-  </tr>
-  <tr>
-      <td style=“”><font style=“color: rgb(51, 51, 51);“>T: <a href=“tel:(+45)31858810” style=“color: #06c”>(+45) 31 85 88 10</a></font></td>
-  </tr>
-  <tr>
-      <td style=“”><font style=“color: rgb(51, 51, 51);“>E: <a href=“mailto:liviu@visual-fix.com” style=“color: #06c”>liviu@visual-fix.com</a></font></td>
-  </tr>
-  <tr>
-      <td style=“”><font style=“color: rgb(51, 51, 51);“>W: <a href=“www.visual-fix.com” style=“color: #06c”>www.visual-fix.com</a></font></td>
-  </tr>
-</tbody></table></div> -->
