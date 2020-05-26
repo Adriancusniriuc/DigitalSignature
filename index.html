@@ -44,7 +44,8 @@
       justify-content: flex-start;
       align-items: center;
       width: 40%;
-      height: 100%;     
+      height: 100%;  
+      margin-left: -3%;      
      }
 
       .logo{
@@ -125,48 +126,15 @@
       overflow: hidden;
       justify-content: center;
       align-items: flex-start;
-      margin-top: -15%;
+      z-index: 44;
     }
 
     iframe{
       position: absolute;
-      /* transform: scale(0.9); */
       width: 266%;
-      margin-top:15%;
+      margin-top:3%;
       margin-left: 93%;
       overflow: hidden;
-    }
-
-    @media only screen and (max-width: 550px) {
-      .bannerLink{
-      position:absolute; 
-      top:0; 
-      left:0; 
-      display:inline-block; 
-      width:300px; 
-      height:53px; 
-      margin-top: 33%;
-      margin-left: 10%;
-      z-index:5;
-    }
-    iframe{
-      position: absolute;
-      transform: scale(0.3);
-      width: 266%;
-      margin-top: 2%;
-      overflow: hidden;
-      margin-left: 0%;
-    }
-
-    .disclaimer p{
-      color: #979797;
-      font-size: 7px;
-      font-weight: bold;
-      line-height: 11.11px;
-      font-family: "SF Pro Display";
-      width: 100%;
-      margin-top: -20%;
-    }
     }
 
     .bannerLink{
@@ -174,11 +142,12 @@
       top:0; 
       left:0; 
       display:inline-block; 
-      width:300px; 
-      height:53px; 
+      width:1000px; 
+      height:150px; 
       margin-top: 33%;
       margin-left: 10%;
        z-index:5;
+       border-radius: 5px blue solid;
     }
 
     .disclaimer{
@@ -201,6 +170,46 @@
       color: black;
     }
 
+    @media only screen and (max-width: 550px) {
+      .bannerLink{
+      position:absolute; 
+      top:0; 
+      left:0; 
+      display:inline-block; 
+      width:300px; 
+      height:53px; 
+      margin-top: 33%;
+      margin-left: 10%;
+      z-index:5;
+    }
+    iframe{
+      position: absolute;
+      transform: scale(0.3);
+      width: 266%;
+      margin-top: 3%;
+      overflow: hidden;
+      margin-left: 0%;
+      margin-top: -12%;
+    }
+
+    .disclaimer p{
+      color: #979797;
+      font-size: 7px;
+      font-weight: bold;
+      line-height: 11.11px;
+      font-family: "SF Pro Display";
+      width: 100%;
+      margin-top: -22%;
+    }
+
+    .bannerLink{
+   
+      width:290px !important; 
+      height:43px !important; 
+      margin-top: 30% !important;
+      margin-left: 10%;
+    }
+    }
     </style>
 </head>
 <body>
