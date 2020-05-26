@@ -18,45 +18,60 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
-      width: 600px;
-      height: 400px;    
+      width: 375px;
+      height: 287px;    
+      margin-top:1% ;
+      /* margin-left: 17px; */
     }
     
 
-    body {position: relative}
+    body {
+      position: relative;
+      width: 90%;
+      height: 100%;
+    }
     .info{
       display: flex;
       width: 80%;
-      height: 280px;
+      height: 140px;
       justify-content: flex-start;
-      margin-top:10% ;
+      /* margin-top:20% ; */
+      overflow: hidden;
       }
 
     .column1{
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
       width: 40%;
-      }
+      height: 100%;     
+     }
 
+      .logo{
+        width: 82px;
+        height: 73px;
+      }
 
     .icons{
       display: flex;
       width: 80%;
-      justify-content: space-around;
+      justify-content: space-evenly;
       margin: 8% 0% 20% 0%;
     }
     .social-icon{
       filter: invert(74%) sepia(0%) saturate(3589%) hue-rotate(352deg) brightness(100%) contrast(78%);
+      width: 26px;
+      height: 26px;
+  
     }
 
     .column2{
       width: 60%;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      margin-left: 8%;
+      justify-content: flex-start;
+      /* margin-left: 3%; */
       height: 90%;
     }
 
@@ -65,21 +80,24 @@
       color: #082f7c;
       margin-left: 5%;
       font-weight: bold;
+      font-size: 19px;
     }
 
     h2{
     color: #979797;
     font-family: "SF Pro Display";
     margin-left: 5%;
+    font-size: 12px;
     }
 
     i{
-      font-size: 19px;
+      font-size: 13px;
     }
 
     .ml-1{
-      font-size: 25px;
+      font-size: 15px;
       margin-left: 4%;
+      line-height: 0%;
     }
 
     .area-code{
@@ -88,8 +106,7 @@
     .contact{
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
-      margin-left: 5%;
+      justify-content: flex-start;
       margin-top: 10%;
       height: 50%;
       width: 100%;
@@ -101,37 +118,39 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      align-content: center;
-      width: 100%;
+      /* justify-content: space-around; */
+      width: 80%;
     }
     .banner{
       height: 53px;
       width: 80%;
       display: flex;
       overflow: hidden;
+      justify-content: center;
+      align-items: flex-end;
+      
     }
 
     iframe{
       position: absolute;
-      transform: scale(0.5);
-      width: 105%;
-      margin-left: -26%;
-      margin-top: -5%;
-      /* overflow: hidden; */
+      transform: scale(0.3);
+      width: 123%;
+      margin-top: 2%;
     }
 
     .disclaimer{
       height: 53px;
-      width: 80%;
-      margin-top: 8%;
+      width: 100%;
     }
 
     p{
       color: #979797;
-      font-size: 10px;
+      font-size: 7px;
       font-weight: bold;
-      line-height: 15.11px;
+      line-height: 11.11px;
       font-family: "SF Pro Display";
+      width: 100%;
+      margin-top: -10%;
     }
 
     a{
@@ -144,21 +163,16 @@
 <body>
   
   <main>
-    <!-- src="assets/Logo_Icon@2x.svg" -->
     <div class="info">
       <div class="column1">
-      <a class="logo" href=https://visual-fix.dk><img src="assets/Logo_4 copy.gif"  loop=infinite  dynsrc="=-1" title="logo" /></a>
+      <a class="logo" href=https://visual-fix.dk><img src="assets/Logo_4 copy.gif" class="logo" loop=infinite  dynsrc="=-1" title="logo" /></a>
         
       <div class="icons">
-        <!-- <i class="fab fa-facebook"></i>
-        <i class="fab fa-linkedin-in"></i> -->
-        <!-- <svg> -->
-        <img class="social-icon"  src="assets/iconfinder_facebook_circle_black_107153@2x.svg" title="fb-icon" >
-      <!-- </svg> -->
-        <img class="social-icon"  src="assets/iconfinder_linkedin_circle_black_107159@2x.svg" title="li-icon" >
+        <a href=https://www.facebook.com/visualfix><img class="social-icon"  src="assets/iconfinder_facebook_circle_black_107153@2x.svg" title="fb-icon" ></a>
+        <a href=https://www.linkedin.com/company/visual-fix> <img class="social-icon"  src="assets/iconfinder_linkedin_circle_black_107159@2x.svg" title="li-icon" ></a>
       </div>
       </div>
-
+      
       <div class="column2">
         <h1> Liviu Berecz</h1>
         <h2> CEO Founder</h2>
@@ -168,8 +182,6 @@
         <div><i class="fas fa-at "></i><a href=mailto:liviu@visual-fix.com> <span class="ml-1">liviu@visual-fix.com </span></a></div>
         <div ><i class="fas fa-globe-europe"></i> <a href=https://visual-fix.dk> <span class="ml-1">www.visual-fix.com  </span> </a> </div>
         </div>
-
-  
       </div>
 
       </div>  
