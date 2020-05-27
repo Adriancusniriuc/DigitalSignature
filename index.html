@@ -6,8 +6,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Liviu signature</title>
-  <link href="main.css" rel="stylesheet" type="text/css">
-  <script src="app.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="//db.onlinewebfonts.com/c/3cff9206b4c8d578245ef1aaeeaf9e84?family=SF+Pro+Display" rel="stylesheet" type="text/css"/>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -51,6 +49,8 @@
       .logo{
         width: 72px;
         height: 63px;
+        /* animation-delay: 10s; */
+        animation-delay: 5s, 5s;
       }
 
     .icons{
@@ -132,7 +132,7 @@
     iframe{
       position: absolute;
       width: 266%;
-      margin-top:3%;
+      margin-top:5%;
       margin-left: 93%;
       overflow: hidden;
     }
@@ -157,12 +157,12 @@
 
     p{
       color: #979797;
-      font-size: 7px;
+      font-size: 11.5px;
       font-weight: bold;
       line-height: 11.11px;
       font-family: "SF Pro Display";
-      width: 100%;
-      margin-top: 15%;
+      width: 335%;
+      margin-top: 18%;
     }
 
     a{
@@ -189,21 +189,20 @@
       margin-top: 3%;
       overflow: hidden;
       margin-left: 0%;
-      margin-top: -12%;
+      margin-top: -11%;
     }
 
     .disclaimer p{
       color: #979797;
-      font-size: 7px;
+      font-size: 9px;
       font-weight: bold;
       line-height: 11.11px;
       font-family: "SF Pro Display";
       width: 100%;
-      margin-top: -22%;
+      margin-top: -20%;
     }
 
     .bannerLink{
-   
       width:290px !important; 
       height:43px !important; 
       margin-top: 30% !important;
@@ -217,8 +216,10 @@
   <main>
     <div class="info">
       <div class="column1">
-      <a class="logo" href=https://visual-fix.dk><img src="assets/Logo_4 copy.gif" class="logo" loop=infinite  dynsrc="=-1" title="logo" /></a>
-        
+      <img src="assets/Logo_4 copy.gif" class="logo" id="gif" " loop=infinite  title="logo" />
+      <script>document.getElementById('gif').src="assets/Logo_4 copy.gif?a="+Math.random()</script>  
+    
+      <!-- script to load giff on every refresh -->
       <div class="icons">
         <a href=https://www.facebook.com/visualfix><img class="social-icon"  src="assets/iconfinder_facebook_circle_black_107153@2x.svg" title="fb-icon" ></a>
         <a href=https://www.linkedin.com/company/visual-fix> <img class="social-icon"  src="assets/iconfinder_linkedin_circle_black_107159@2x.svg" title="li-icon" ></a>
